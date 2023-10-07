@@ -23,7 +23,6 @@ pygments = "^2.16.1"
 mkdocs-material = "^9.4.4"
 pymdown-extensions = "^10.3"
 mkdocs-bootstrap386 = "^0.0.2"
-pre-commit = "^3.4.0"
 
 
 [build-system]

@@ -17,6 +17,12 @@ blue = "^0.9.1"
 pydocstyle = "^6.3.0"
 pip-audit = "^2.6.1"
 taskipy = "^1.12.0"
+mkdocs = "^1.5.3"
+mkdocstrings-python = "^1.7.2"
+pygments = "^2.16.1"
+mkdocs-material = "^9.4.4"
+pymdown-extensions = "^10.3"
+mkdocs-bootstrap386 = "^0.0.2"
 
 
 [build-system]
@@ -27,3 +33,4 @@ build-backend = "poetry.core.masonry.api"
 format = "isort . && blue ."
 test = "poetry run pytest -v"
 run = "python3 app/main.py"
+kill = "kill -9 $(lsof -t -i :8000)"

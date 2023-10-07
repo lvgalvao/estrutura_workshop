@@ -17,3 +17,4 @@ def testar_a_concatenacao_da_lista_de_dataframe():
     # assert
     assert df.shape == (4, 2)
     assert data_frame.equals(df)
+    assert df.shape != (5, 2)

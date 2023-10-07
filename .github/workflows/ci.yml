@@ -14,8 +14,9 @@ jobs:
         with:
           python-version: 3.11.3
 
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
+      - name: Install poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
 
       - name: Install dependencies with poetry
         run: poetry install

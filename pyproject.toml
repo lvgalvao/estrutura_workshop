@@ -5,15 +5,23 @@ description = "meu projeto de etl"
 authors = ["Luciano Filho <lvgalvaofilho@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "estrutura_workshop"}]
+packages = [{ include = "estrutura_workshop" }]
 
 [tool.poetry.dependencies]
 python = "3.11.3"
 pandas = "^2.1.1"
 openpyxl = "^3.1.2"
 pytest = "^7.4.2"
+isort = "^5.12.0"
+blue = "^0.9.1"
+pydocstyle = "^6.3.0"
+pip-audit = "^2.6.1"
+taskipy = "^1.12.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "isort . && blue ."
